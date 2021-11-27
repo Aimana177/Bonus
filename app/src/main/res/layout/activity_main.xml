@@ -341,6 +341,43 @@
                     tools:ignore="TouchTargetSizeCheck" />
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout2">
+
+                <Button
+                    android:id="@+id/pods"
+                    android:layout_width="136dp"
+                    android:layout_height="40dp"
+                    android:text="pods"
+                    android:textColor="#009EFD"
+                    android:background="@color/white" />
+
+                <Button
+                    android:id="@+id/about"
+                    android:layout_width="136dp"
+                    android:layout_height="40dp"
+                    android:text="About"
+                    android:textColor="#919191"
+                    android:background="@color/white" />
+
+                <Button
+                    android:id="@+id/groups"
+                    android:layout_width="135dp"
+                    android:layout_height="40dp"
+                    android:text="groups"
+                    android:textColor="#919191"
+                    android:background="@color/white" />
+
+
+            </LinearLayout>
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
@@ -352,6 +389,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/rectangle_2_3" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
