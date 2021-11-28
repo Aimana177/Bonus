@@ -78,7 +78,8 @@
                         android:backgroundTint="#85EB7D"
                         android:text="Follow"
                         android:textColor="@color/white"
-                        app:layout_constraintEnd_toStartOf="@+id/button2" />
+                        app:layout_constraintEnd_toStartOf="@+id/button2"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </androidx.cardview.widget.CardView>
 
