@@ -62,7 +62,8 @@
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/LinerLayout1"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="12dp">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
@@ -291,7 +292,6 @@
                 <TextView
                     android:id="@+id/textView12"
                     android:layout_width="264dp"
-
                     android:layout_height="58dp"
                     android:layout_marginEnd="15dp"
                     android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
@@ -344,41 +344,69 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/linearLayout3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/linearLayout2">
 
                 <Button
                     android:id="@+id/pods"
                     android:layout_width="136dp"
                     android:layout_height="40dp"
+                    android:background="@color/white"
                     android:text="pods"
-                    android:textColor="#009EFD"
-                    android:background="@color/white" />
+                    android:textColor="#009EFD" />
 
                 <Button
                     android:id="@+id/about"
                     android:layout_width="136dp"
                     android:layout_height="40dp"
+                    android:background="@color/white"
                     android:text="About"
-                    android:textColor="#919191"
-                    android:background="@color/white" />
+                    android:textColor="#919191" />
 
                 <Button
                     android:id="@+id/groups"
                     android:layout_width="135dp"
                     android:layout_height="40dp"
+                    android:background="@color/white"
                     android:text="groups"
-                    android:textColor="#919191"
-                    android:background="@color/white" />
+                    android:textColor="#919191" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout3">
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Deep Dive into Chatbot Training Best  Practices"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14"
+                    app:srcCompat="@drawable/rectangle" />
 
             </LinearLayout>
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
@@ -395,12 +423,11 @@
         android:id="@+id/menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:menu="@menu/menu"
         android:background="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu">
     </com.google.android.material.bottomnavigation.BottomNavigationView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
