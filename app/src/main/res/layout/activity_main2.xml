@@ -24,14 +24,18 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <ImageButton
             android:id="@+id/back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/back"
-            android:background="#00000000"
+            android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"/>
+            android:background="#00000000"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/back"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/followers"
@@ -50,20 +54,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/liner_back">
+
         <Button
             android:id="@+id/pods"
             android:layout_width="202dp"
             android:layout_height="50dp"
             android:background="@color/white"
             android:text="@string/following"
-            android:textColor="#009EFD" />
+            android:textColor="#1976D2" />
+
         <Button
             android:id="@+id/about"
             android:layout_width="206dp"
             android:layout_height="50dp"
             android:background="@color/white"
             android:text="@string/followers"
-            android:textColor="#919191" />
+            android:textColor="#757575" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

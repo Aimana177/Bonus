@@ -78,7 +78,7 @@
                         android:background="#85EB7D"
                         android:backgroundTint="#85EB7D"
                         android:text="Follow"
-                        android:textColor="@color/white"
+                        android:textColor="#455A64"
                         app:layout_constraintEnd_toStartOf="@+id/button2"
                         tools:ignore="TouchTargetSizeCheck" />
 
@@ -92,7 +92,7 @@
                     <Button
                         android:id="@+id/button2"
                         android:layout_width="100dp"
-                        android:layout_height="30dp"
+                        android:layout_height="40dp"
                         android:backgroundTint="@color/white"
                         android:text="Invite"
                         android:textColor="#80000000" />
@@ -358,7 +358,7 @@
                     android:layout_height="40dp"
                     android:background="@color/white"
                     android:text="pods"
-                    android:textColor="#009EFD" />
+                    android:textColor="#1976D2" />
 
                 <Button
                     android:id="@+id/about"
