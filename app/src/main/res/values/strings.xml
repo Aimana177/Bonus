@@ -10,4 +10,27 @@
     <string name="tony_moreno">Tony Moreno</string>
     <string name="follow">Follow</string>
     <string name="lorem_ipsum_dolor_sit_amet_consectetuer_adipiscing_elit_aenean_commodo_ligula_eget">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.</string>
+    <string name="pic1">TODO</string>
+    <string name="follow">Follow</string>
+    <string name="invite">Invite</string>
+    <string name="_2">2</string>
+    <string name="pods">Pods</string>
+    <string name="_48">48</string>
+    <string name="following">Following</string>
+    <string name="_5">5</string>
+    <string name="followers">Followers</string>
+    <string name="john_doe">John Doe</string>
+    <string name="john_doe_2">John Doe</string>
+    <string name="site_com">Site.com/</string>
+    <string name="bio">Bio</string>
+    <string name="descrip">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.</string>
+    <string name="button1">Button</string>
+    <string name="reputation">Reputation:</string>
+    <string name="_120">120</string>
+    <string name="button2">Button</string>
+    <string name="pods2">pods</string>
+    <string name="about">About</string>
+    <string name="groups">groups</string>
+    <string name="opisanie">Deep Dive into Chatbot Training Best Practices</string>
+    <string name="invited_by_maryk">invited by MaryK</string>
 </resources>

@@ -7,20 +7,9 @@
     tools:context=".MainActivity">
 
 
-    <ImageView
-        android:id="@+id/button"
-        android:layout_width="47dp"
-        android:layout_height="48dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04" />
 
 
-    <androidx.cardview.widget.CardView
+<androidx.cardview.widget.CardView
         android:id="@+id/Avatar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,7 +24,8 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/rectangle_6_7" />
+            app:srcCompat="@drawable/rectangle_6_7"
+            android:contentDescription="@string/pic1" />
 
     </androidx.cardview.widget.CardView>
 
@@ -77,7 +67,7 @@
                         android:layout_height="30dp"
                         android:background="#85EB7D"
                         android:backgroundTint="#85EB7D"
-                        android:text="Follow"
+                        android:text="@string/follow"
                         android:textColor="#455A64"
                         app:layout_constraintEnd_toStartOf="@+id/button2"
                         tools:ignore="TouchTargetSizeCheck" />
@@ -94,7 +84,7 @@
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:backgroundTint="@color/white"
-                        android:text="Invite"
+                        android:text="@string/invite"
                         android:textColor="#80000000" />
 
                 </androidx.cardview.widget.CardView>
@@ -118,7 +108,7 @@
                     android:layout_height="30dp"
                     android:background="#8085EB7D"
                     android:backgroundTint="#85EB7D"
-                    android:text="invited by MaryK"
+                    android:text="@string/invited_by_maryk"
                     android:textColor="#266528"
                     android:textSize="10sp"
                     app:layout_constraintEnd_toStartOf="@+id/button2" />
@@ -144,7 +134,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="2"
+                        android:text="@string/_2"
                         android:textColor="#85EB7D"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toTopOf="@+id/textView"
@@ -156,7 +146,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Pods"
+                        android:text="@string/pods"
                         app:layout_constraintEnd_toEndOf="@+id/textView4"
                         app:layout_constraintStart_toStartOf="@+id/textView4"
                         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -174,7 +164,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginEnd="5dp"
-                        android:text="48"
+                        android:text="@string/_48"
                         android:textColor="#85EB7D"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toTopOf="@+id/textView2"
@@ -186,7 +176,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Following"
+                        android:text="@string/following"
                         app:layout_constraintBottom_toBottomOf="@+id/textView"
                         app:layout_constraintEnd_toEndOf="@+id/textView5"
                         app:layout_constraintStart_toStartOf="@+id/textView5"
@@ -204,7 +194,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="5"
+                        android:text="@string/_5"
                         android:textColor="#85EB7D"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toTopOf="@+id/textView3"
@@ -216,7 +206,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Followers"
+                        android:text="@string/followers"
                         app:layout_constraintBottom_toBottomOf="@+id/textView2"
                         app:layout_constraintEnd_toEndOf="@+id/textView6"
                         app:layout_constraintStart_toStartOf="@+id/textView6"
@@ -243,9 +233,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="John Doe"
+                    android:text="@string/john_doe"
                     android:textColor="@color/black"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@+id/textView9" />
 
@@ -254,7 +244,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="John Doe"
+                    android:text="@string/john_doe_2"
                     android:textColor="#99000000"
                     android:textSize="10dp" />
 
@@ -264,7 +254,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="top"
                     android:layout_marginBottom="8dp"
-                    android:text="Site.com/"
+                    android:text="@string/site_com"
                     android:textColor="@color/purple_700"
                     app:layout_constraintBottom_toTopOf="@+id/textView10" />
 
@@ -284,9 +274,9 @@
                     android:id="@+id/textView11"
                     android:layout_width="29dp"
                     android:layout_height="23dp"
-                    android:text="Bio"
+                    android:text="@string/bio"
                     android:textColor="#009EFD"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     app:layout_constraintEnd_toStartOf="@+id/textView12" />
 
                 <TextView
@@ -294,7 +284,7 @@
                     android:layout_width="264dp"
                     android:layout_height="58dp"
                     android:layout_marginEnd="15dp"
-                    android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget."
+                    android:text="@string/descrip"
                     app:layout_constraintEnd_toStartOf="@+id/button5"
                     app:layout_constraintStart_toEndOf="@+id/textView11" />
 
@@ -302,7 +292,7 @@
                     android:id="@+id/button5"
                     android:layout_width="55dp"
                     android:layout_height="59dp"
-                    android:text="Button" />
+                    android:text="@string/button1" />
             </LinearLayout>
 
             <LinearLayout
@@ -321,7 +311,7 @@
                     android:layout_width="72dp"
                     android:layout_height="23dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Reputation:"
+                    android:text="@string/reputation"
                     android:textColor="#009EFD"
                     android:textSize="14dp"
                     android:textStyle="bold"
@@ -331,14 +321,14 @@
                     android:id="@+id/textView7"
                     android:layout_width="32dp"
                     android:layout_height="21dp"
-                    android:text="120"
+                    android:text="@string/_120"
                     app:layout_constraintEnd_toStartOf="@+id/button4" />
 
                 <Button
                     android:id="@+id/button4"
                     android:layout_width="45dp"
                     android:layout_height="45dp"
-                    android:text="Button"
+                    android:text="@string/button2"
                     tools:ignore="TouchTargetSizeCheck" />
 
             </LinearLayout>
@@ -357,7 +347,7 @@
                     android:layout_width="136dp"
                     android:layout_height="40dp"
                     android:background="@color/white"
-                    android:text="pods"
+                    android:text="@string/pods2"
                     android:textColor="#1976D2" />
 
                 <Button
@@ -365,7 +355,7 @@
                     android:layout_width="136dp"
                     android:layout_height="40dp"
                     android:background="@color/white"
-                    android:text="About"
+                    android:text="@string/about"
                     android:textColor="#919191" />
 
                 <Button
@@ -373,7 +363,7 @@
                     android:layout_width="135dp"
                     android:layout_height="40dp"
                     android:background="@color/white"
-                    android:text="groups"
+                    android:text="@string/groups"
                     android:textColor="#919191" />
             </LinearLayout>
             <LinearLayout
@@ -389,7 +379,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Deep Dive into Chatbot Training Best  Practices"
+                    android:text="@string/opisanie"
                     android:textColor="@color/black"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
